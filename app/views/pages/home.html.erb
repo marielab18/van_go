@@ -1,9 +1,87 @@
-<%= user_signed_in? %>
-
-<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://i.picsum.photos/id/183/2316/1544.jpg?hmac=908ZBWKqGdL9kio38tCq2ViwMm3DjLUtkjU_6SWNa9k);">
-  <div class="container">
-    <h1>Welcome to VanGO! <strong>Find vans in your area!</strong></h1>
-    <p>Anything.</p>
-    <a class="btn btn-flat" href="#">Book now</a>
+<%user_signed_in? %>
+<%# <div class=“form col-12 col-md-6 col-lg-4”> %>
+  <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://i.picsum.photos/id/183/2316/1544.jpg?hmac=908ZBWKqGdL9kio38tCq2ViwMm3DjLUtkjU_6SWNa9k);">
+    <div class="container">
+      <h1>Welcome to VanGO! <strong>Easily book vans in your area!</strong></h1>
+      <p>Affordable. Convienient. Transparent.</p>
+      <a class="btn btn-flat" href="#">VanGO - Let's GO!</a>
+    </div>
+  </div>
+<%# CARD %>
+<br>
+<br>
+<div class="card-van">
+  <img src="https://i.picsum.photos/id/1072/3872/2592.jpg?hmac=I5d8vixhn6Ne9Ao1YQdtHfxS2YKNyx6_Bu8N_V1-ovk" />
+  <div class="card-van-infos">
+    <div>
+      <h2>Title here</h2>
+      <p>Short description here!</p>
+    </div>
+    <h2 class="card-van-pricing">£99.99</h2>
+    <img src="https://i.picsum.photos/id/1074/5472/3648.jpg?hmac=w-Fbv9bl0KpEUgZugbsiGk3Y2-LGAuiLZOYsRk0zo4A" class="card-van-user avatar-bordered" />
   </div>
 </div>
+
+<br>
+<br>
+
+<div class="container-fluid container py-3 mt-4">
+    <h2 class="h3">What clients said about VanGO</h2>
+    <div class="row mt-4">
+        <div class="col-md-3">
+            <div class="card mb-3 border-0">
+                <img src="https://images.unsplash.com/photo-1533654793924-4fc4949fb71e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80" class="card-img-top" alt="...">
+                <div class="card-body pl-0">
+                    <h5 class="card-title text-info">&#9733; &#9733; &#9733; &#9733; &#9733;</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <div class="">
+                      <div class="d-flex">
+                      <img src="https://a0.muscache.com/im/pictures/660e2273-b37b-4f50-917e-369e7bc3f665.jpg?aki_policy=large" class="ml-0 mr-2 img-fluidX rounded-circle w-25 mb-3" alt="...">
+                      <div class="d-flex flex-column">
+                        <h5 class="mt-0 mb-1">Sara</h5>
+                        <p>United States</p>
+                      </div>
+                     </div>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card mb-3 border-0">
+                <img src="https://images.unsplash.com/photo-1520908695049-da13395b27a6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1225&q=80" class="card-img-top" alt="...">
+                <div class="card-body pl-0">
+                    <h5 class="card-title text-info">&#9733;</h5>
+                    <p class="card-text">Assholes!. This is a scam! Don't rent here, I didn't get my money back. Will sue you!.</p>
+                    <div class="">
+                      <div class="d-flex">
+                      <img src="https://a0.muscache.com/im/pictures/660e2273-b37b-4f50-917e-369e7bc3f665.jpg?aki_policy=large" class="ml-0 mr-2 img-fluidX rounded-circle w-25 mb-3" alt="...">
+                      <div class="d-flex flex-column">
+                        <h5 class="mt-0 mb-1">Sarah</h5>
+                        <p>Germany</p>
+                      </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card mb-3 border-0">
+                <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" class="card-img-top" alt="...">
+                <div class="card-body pl-0">
+                    <h5 class="card-title text-info">&#9733; &#9733; &#9733; &#9733; &#9733;</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <div class="">
+                      <div class="d-flex">
+                      <img src="https://a0.muscache.com/im/pictures/660e2273-b37b-4f50-917e-369e7bc3f665.jpg?aki_policy=large" class="ml-0 mr-2 img-fluidX rounded-circle w-25 mb-3" alt="...">
+                        <div class="d-flex flex-column">
+                          <h5 class="mt-0 mb-1">Sara</h5>
+                          <p>United States</p>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<br>
