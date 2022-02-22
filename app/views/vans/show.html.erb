@@ -8,3 +8,9 @@
   <li><%= @van.price %></li>
   <li><%= @van.description %></li>
 </ul>
+
+<%= link_to "Update", edit_van_path(@van) %>
+<%= link_to "Delete your van",
+            van_path(@van),
+            method: :delete,
+            data: { confirm: "Are you sure?" }  %>

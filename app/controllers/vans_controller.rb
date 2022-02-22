@@ -23,18 +23,28 @@ class VansController < ApplicationController
   end
 
   def edit
+    @van = Van.find(params[:id])
   end
 
   def update
+    @van = Van.find(params[:id])
+    @van.update(van_params)
+
+    redirect_to van_path(@van)
   end
 
   def destroy
+    @van = Van.find(params[:id])
+    @van.user = current_user
+    @van.destroy
+
+    redirect_to vans_path
   end
 
   private
 
   def van_params
-    params.require(:vans).permit(:size, :model, :brand, :year, :price, :description)
+    params.require(:van).permit(:size, :model, :brand, :year, :price, :description)
   end
 
 end
