@@ -18,7 +18,7 @@
         <p><%= van.price %>€</p>
       </div>
       <div class="product-price-btn">
-        <button type="button">rent now!</button>
+        <button type="button"><%= link_to "Book now!",  new_van_booking_path(van), style: "text-decoration: none" %></button>
       </div>
     </div>
   </div>
