@@ -8,6 +8,8 @@
 require "faker"
 require "open-uri"
 
+Van.destroy_all
+
 10.times do
   van = Van.new(
     size: ["S", "M", "L"].sample,
