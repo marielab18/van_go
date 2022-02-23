@@ -44,7 +44,7 @@ class VansController < ApplicationController
   private
 
   def van_params
-    params.require(:van).permit(:size, :model, :brand, :year, :price, :description)
+    params.require(:van).permit(:size, :model, :brand, :year, :price, :description, :photo)
   end
 
 end
