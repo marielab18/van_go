@@ -1,13 +1,25 @@
 <h1>This is your Van that you selected</h1>
 
-<ul>
+<div class="card-van">
+  <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/greece.jpg" />
+  <div class="card-van-infos">
+    <div>
+      <h2><%= (@van.brand) + (" ") + (@van.model) %></h2>
+      <h3>EUR <%= @van.price %></h3>
+      <h3><%= (@van.year)%></h3>
+      <p><%= @van.size %></p>
+      <p><%= @van.description %></p>
+    </div>
+    <ul>
   <li><%= @van.size %></li>
   <li><%= @van.model %></li>
   <li><%= @van.brand %></li>
   <li><%= @van.year %></li>
   <li><%= @van.price %></li>
-  <li><%= @van.description %></li>
 </ul>
+    <img src="https://kitt.lewagon.com/placeholder/users/krokrob" class="card-van-user avatar-bordered" />
+  </div>
+</div>
 
 <%= link_to "Update", edit_van_path(@van) %>
 <%= link_to "Delete your van",
