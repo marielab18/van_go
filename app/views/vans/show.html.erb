@@ -1,5 +1,5 @@
 <h1>This is your Van that you selected</h1>
-
+<%= cl_image_tag @van.photo.key, height: 300, width: 400, crop: :fill %>
 <ul>
   <li><%= @van.size %></li>
   <li><%= @van.model %></li>
