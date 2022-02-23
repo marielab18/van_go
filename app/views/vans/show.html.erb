@@ -14,3 +14,5 @@
             van_path(@van),
             method: :delete,
             data: { confirm: "Are you sure?" }  %>
+
+<%= link_to "Book this van", new_van_booking_path(@van) %>
