@@ -2,7 +2,22 @@
 
 <ol>
   <% @vans.each do |van| %>
-    <li><%= link_to "Model #{van.model} Price #{van.price}", van_path(van) %></li>
+    <div class="wrapper">
+    <div class="product-img">
+      <img src="http://bit.ly/2tMBBTd" height="420" width="327">
+    </div>
+    <div class="product-info">
+      <div class="product-text">
+        <h1><%= van.model %></h1>
+        <h2><%= van.brand %> (<%= van.year %>)</h2>
+        <p><%= van.description %></p>
+        <p><%= van.price %>€</p>
+      </div>
+      <div class="product-price-btn">
+        <button type="button">rent now!</button>
+      </div>
+    </div>
+  </div>
   <% end %>
 </ol>
 
