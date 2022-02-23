@@ -1,10 +1,13 @@
+
+<br>
+<br>
 <h1>Vans </h1>
 
 <ol>
   <% @vans.each do |van| %>
     <div class="wrapper">
     <div class="product-img">
-      <img src="http://bit.ly/2tMBBTd" height="420" width="327">
+      <%= cl_image_tag van.photo.key, height: 420, width: 327, crop: :fill %>
     </div>
     <div class="product-info">
       <div class="product-text">
@@ -22,3 +25,6 @@
 </ol>
 
 <%= link_to "Create a new Van", new_van_path %>
+<br>
+<br>
+<br>
