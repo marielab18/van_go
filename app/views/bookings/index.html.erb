@@ -1,0 +1,13 @@
+<h2>Bookings</h2>
+
+<ul>
+  <% @bookings.each do |booking| %>
+    <li><%= "This is your booking date #{booking.start_date} for this van #{booking.van.model}" %>
+        <%= link_to "Update your booking", edit_booking_path(booking) %>
+        <%= link_to "Delete your booking",
+                  booking_path(booking),
+                  method: :delete,
+                  data: { confirm: "Are you sure?" } %>
+    </li>
+  <% end %>
+</ul>
