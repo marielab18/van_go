@@ -4,10 +4,10 @@
 <div class='container'>
   <h1>Vans </h1>
 
-<div style="width: 100%; height: 600px;"
-  data-controller="mapbox"
-  data-mapbox-markers-value="<%= @markers.to_json %>"
-  data-mapbox-api-key-value="<%= ENV['MAPBOX_API_KEY'] %>"></div>
+  <div style="width: 100%; height: 600px;"
+    data-controller="mapbox"
+    data-mapbox-markers-value="<%= @markers.to_json %>"
+    data-mapbox-api-key-value="<%= ENV['MAPBOX_API_KEY'] %>"></div>
 
 
   <%= link_to "Create a new Van", new_van_path, style: "text-decoration: none", class: "btn btn-info" %>
@@ -15,21 +15,21 @@
   <div class='cards'>
     <% @vans.each do |van| %>
       <div class="wrapper">
-      <div class="product-img">
-        <%= cl_image_tag van.photo.key, height: 360, width: 327, crop: :fill %>
-      </div>
-      <div class="product-info">
-        <div class="product-text">
-          <h1><%= van.model %></h1>
-          <h2><%= van.brand %> (<%= van.year %>)</h2>
-          <p><%= van.description %></p>
-          <p id='bold-price'><%= van.price %>€</p>
+        <div class="product-img">
+          <%= cl_image_tag van.photo.key, height: 360, width: 327, crop: :fill %>
         </div>
-        <div class="button-booking">
-          <%= link_to "Choose me!",  new_van_booking_path(van), style: "text-decoration: none", class: "btn btn-success" %>
+        <div class="product-info">
+          <div class="product-text">
+            <h1><%= van.model %></h1>
+            <h2><%= van.brand %> (<%= van.year %>)</h2>
+            <p><%= van.description %></p>
+            <p id='bold-price'><%= van.price %>€</p>
+          </div>
+          <div class="button-booking">
+            <%= link_to "Choose me!",  new_van_booking_path(van), style: "text-decoration: none", class: "btn btn-success" %>
+          </div>
         </div>
       </div>
-    </div>
     <% end %>
   </div>
 </div>
