@@ -49,3 +49,17 @@
   background: #1BCB7F;
   color: white;
 }
+=======
+.wrapper {
+  overflow: hidden;
+  height: 120px;
+  background: white;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  display: flex;
+  align-items: center;
+}
+
+.img_show img {
+  height: 100%;
+  width: 120px;
+  object-fit: cover;

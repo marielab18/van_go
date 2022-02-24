@@ -10,6 +10,8 @@ require "open-uri"
 
 Van.destroy_all
 puts "All vans destroyed"
+=======
+
 10.times do
   van = Van.new(
     size: ["S", "M", "L"].sample,
@@ -17,7 +19,7 @@ puts "All vans destroyed"
     brand: Faker::Vehicle.make,
     year: Faker::Vehicle.year,
     price: rand(50..100),
-    description: Faker::Vehicle.standard_specs
+    description: Faker::Vehicle.standard_specs.join(", ")
   )
   van.user = User.first
   van.save
