@@ -17,7 +17,7 @@ Van.destroy_all
     brand: Faker::Vehicle.make,
     year: Faker::Vehicle.year,
     price: rand(50..100),
-    description: Faker::Vehicle.standard_specs
+    description: Faker::Vehicle.standard_specs.join(", ")
   )
   van.user = User.first
   van.save
