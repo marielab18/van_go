@@ -25,8 +25,8 @@ puts "Creating vans.."
     brand: Faker::Vehicle.make,
     year: Faker::Vehicle.year,
     price: rand(50..100),
-    description: Faker::Vehicle.standard_specs,
-    address: streets.sample + " " +rand(30).to_s + " Köln"
+    description: Faker::Vehicle.standard_specs.join(", "),
+    address: "#{streets.sample} #{rand(30)} Köln"
   )
   van.user = User.first
   van.save
