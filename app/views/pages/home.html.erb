@@ -10,12 +10,19 @@
                     <h1 class="h3">Welcome to VanGO! <strong>Find vans in your area!</strong></h1>
                      <form>
                         <div class="form-group">
-                          <label for="locationInput">WHERE</label>
-                          <input type="email" class="form-control" id="locationInput" aria-describedby="locationInputHelp" placeholder="Anywhere">
-                          <small id="locationInputHelp" class="form-text text-muted sr-only">Please type in your desired destination.</small>
+                          <div class="form-group">
+                            <label for="exampleFormControlSelect1">Example select</label>
+                            <select class="form-control" id="exampleFormControlSelect1">
+                              <option>1</option>
+                              <option>2</option>
+                              <option>3</option>
+                              <option>4</option>
+                              <option>5</option>
+                            </select>
+                          </div>
                         </div>
                       </form>
-                    <a href="#" class="btn btn-danger btn-block">Search</a>
+                    <button type="button" class="btn btn-success btn-lg">Large button</button>
                   </div>
                 </div>
                 </div>
@@ -29,13 +36,13 @@
 
 <div class="container-fluid container py-3 mt-4">
     <h2 class="h3">What clients said about VanGO</h2>
-    <div class="row mt-4">
-        <div class="col-md-3">
+    <div class="row mt-4 border-bottom">
+        <div class="col-md-4">
             <div class="card mb-3">
                 <img src="https://images.unsplash.com/photo-1591706515036-cb0f48dc5e62?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title text-info">&#9733; &#9733; &#9733; &#9733; &#9733;</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <p class="card-text">Rented a lovely yellow van. The service provided was exceptional.</p>
                     <div class="">
                           <div class="d-flex">
                            <img src="https://kitt.lewagon.com/placeholder/users/cveneziani" class="ml-0 mr-2 img-fluidX rounded-circle w-25 mb-3" alt="...">
@@ -48,7 +55,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-4">
             <div class="card mb-3">
                 <img src="https://images.unsplash.com/photo-1588537681720-aab74299f3a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1474&q=80" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -66,12 +73,12 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-4">
             <div class="card mb-3">
                 <img src="https://images.unsplash.com/photo-1621635646183-d9f1044469c4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1599&q=80" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title text-info">&#9733; &#9733; &#9733; &#9733;</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <p class="card-text">Needed a van last minute to change house and VanGO was a life saver.</p>
                     <div class="">
                       <div class="d-flex">
                         <img src="https://kitt.lewagon.com/placeholder/users/arthur-littm" class="ml-0 mr-2 img-fluidX rounded-circle w-25 mb-3" alt="...">
@@ -85,65 +92,64 @@
             </div>
         </div>
     </div>
-</div>
-
-<%# <div class="container-fluid container py-3 mt-4">
-    <h2 class="h3">What clients said about VanGO</h2>
-    <div class="row mt-4">
-        <div class="col-md-3">
-            <div class="card mb-3 border-0">
-              <img src="https://images.unsplash.com/photo-1533654793924-4fc4949fb71e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80" class="card-img-top" alt="...">
-                <div class="card-body pl-0">
-                  <h5 class="card-title text-info">&#9733; &#9733; &#9733; &#9733; &#9733;</h5>
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  <div class="">
-                    <div class="d-flex">
-                      <img src="https://a0.muscache.com/im/pictures/660e2273-b37b-4f50-917e-369e7bc3f665.jpg?aki_policy=large" class="ml-0 mr-2 img-fluidX rounded-circle w-25 mb-3" alt="...">
-                      <div class="d-flex flex-column">
-                        <h5 class="mt-0 mb-1">Sara</h5>
-                        <p>United States</p>
-                      </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-      <div class="col-md-3">
-          <div class="card mb-3 border-0">
-            <img src="https://images.unsplash.com/photo-1520908695049-da13395b27a6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1225&q=80" class="card-img-top" alt="...">
-              <div class="card-body pl-0">
-                  <h5 class="card-title text-info">&#9733;</h5>
-                  <p class="card-text">Assholes!. This is a scam! Don't rent here, I didn't get my money back. Will sue you!.</p>
-                <div class="">
-                  <div class="d-flex">
-                    <img src="https://a0.muscache.com/im/pictures/660e2273-b37b-4f50-917e-369e7bc3f665.jpg?aki_policy=large" class="ml-0 mr-2 img-fluidX rounded-circle w-25 mb-3" alt="...">
-                    <div class="d-flex flex-column">
-                      <h5 class="mt-0 mb-1">Sarah</h5>
-                      <p>Germany</p>
-                    </div>
+    <div class="container-fluid container py-3 mt-4">
+      <h2 class="h3">Vans in your area:</h2>
+        <div class="row mt-4">
+          <div class="col-md-3">
+              <div class="card mb-3 border-0">
+                  <img src="https://carwiki.de/wp-content/uploads/2020/10/Mercedes_Benz_Sprinter_Kfz_Steuer-scaled.jpg" class="card-img-top br0" alt="...">
+                  <p class="small text-uppercase pb-0">Cologne, Germany</p>
+                  <div class="card-body p-0">
+                      <h5 class="card-title">Mercedes Sprinter(2010)</h5>
+                      <p class="card-text m-0">Size: L</p>
+                      <p class="card-text m-0">50€/day</p>
+                      <button type="button" class="btn btn-success btn-sm">More info</button>
                   </div>
               </div>
           </div>
-      </div>
-    <div class="col-md-3">
-      <div class="card mb-3 border-0">
-        <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" class="card-img-top" alt="...">
-          <div class="card-body pl-0">
-            <h5 class="card-title text-info">&#9733; &#9733; &#9733; &#9733; &#9733;</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <div class="">
-              <div class="d-flex">
-                <img src="https://a0.muscache.com/im/pictures/660e2273-b37b-4f50-917e-369e7bc3f665.jpg?aki_policy=large" class="ml-0 mr-2 img-fluidX rounded-circle w-25 mb-3" alt="...">
-                <div class="d-flex flex-column">
-                    <h5 class="mt-0 mb-1">Sara</h5>
-                    <p>United States</p>
-                </div>
+          <div class="col-md-3">
+              <div class="card mb-3 border-0">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/2/2e/2017_Volkswagen_Transporter_BlueMotion.jpg" class="card-img-top br0" alt="...">
+                  <p class="small text-uppercase pb-0">Leverkusen, Germany</p>
+                  <div class="card-body p-0">
+                      <h5 class="card-title">VW Tranporter (2017)</h5>
+                      <p class="card-text m-0">Size: M</p>
+                      <p class="card-text m-0">40€/day</p>
+                      <button type="button" class="btn btn-success btn-sm">More info</button>
+                  </div>
               </div>
-            </div>
-        </div>
-       </div>
-    </div>
-</div> %>
+          </div>
+          <div class="col-md-3">
+              <div class="card mb-3 border-0">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/0/0a/Opel_Vivaro_Combi_1.6_BiTurbo_CDTI_ecoFLEX_%28B%29_%E2%80%93_Frontansicht%2C_7._Oktober_2015%2C_D%C3%BCsseldorf.jpg" class="card-img-top br0" alt="...">
+                  <p class="small text-uppercase pb-0">Frankfurt, Germany</p>
+                  <div class="card-body p-0">
+                      <h5 class="card-title">Opel Vivaro (2015)</h5>
+                      <p class="card-text m-0">Size: M</p>
+                      <p class="card-text m-0">45€/day</p>
+                      <button type="button" class="btn btn-success btn-sm">More info</button>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-3">
+              <div class="card mb-3 border-0">
+                  <img src="https://vehicle.img.symfio.de/1600x,q90/vehicle/5ffi9b/5dea67529fc3390c2d4d41bd/5f37b81858ce68.59339984.jpeg" class="card-img-top br0" alt="...">
+                  <p class="small text-uppercase pb-0">Bonn, Germany</p>
+                  <div class="card-body p-0">
+                      <h5 class="card-title">Fiat Ducato (2016)</h5>
+                      <p class="card-text m-0">Size: L</p>
+                      <p class="card-text m-0">50€/day</p>
+                      <button type="button" class="btn btn-success btn-sm">More info</button>
+              </div>
+          </div>
+      </div>
+      <div class="row mt-2 mb-5">
+         <button class="btn text-info btn-link">
+            <span class="h6">See all vans in your area(1,000+) &gt;</span>
+        </button>
+      </div>
+  </div>
+</div>
 <%# <div class="container-fluid container bg-success display-1">
     3rd section
 </div>
