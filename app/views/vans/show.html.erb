@@ -1,18 +1,43 @@
-<h1>This is your Van that you selected</h1>
-<%= cl_image_tag @van.photo.key, height: 300, width: 400, crop: :fill %>
-<ul>
-  <li><%= @van.size %></li>
-  <li><%= @van.model %></li>
-  <li><%= @van.brand %></li>
-  <li><%= @van.year %></li>
-  <li><%= @van.price %></li>
-  <li><%= @van.description %></li>
-</ul>
+<br>
+<br>
+<br>
+<div class= "container">
 
-<%= link_to "Update", edit_van_path(@van) %>
+
+
+<h1><%= (@van.brand) + (" ") + (@van.model) %></h1>
+<br>
+
+<div class="square-show" class="mb-3">
+<img src="https://picsum.photos/200/300" alt="placeholder">
+  <%# <%= cl_image_tag @van.photo.key, class:"show-image" %>
+  <br>
+  <br>
+  <div class="square-show-infos">
+    <div>
+      <h3>Manufacturing Date: <%= (@van.year)%></h3>
+      <h3>Size: <%= @van.size %></h3>
+      <br>
+      <%= link_to " Book this van for #{@van.price} € ", new_van_booking_path(@van), class: "btn btn-success" %>
+      <br>
+      <br>
+      <p><%= @van.description %></p>
+    </div>
+    <img src="https://picsum.photos/200" class="square-show-user avatar-bordered" />
+    <p>Owner: Etienne Young</p>
+  </div>
+</div>
+<br>
+
+<%= link_to "Update", edit_van_path(@van), class: "btn btn-secondary" %>
 <%= link_to "Delete your van",
-            van_path(@van),
-            method: :delete,
-            data: { confirm: "Are you sure?" }  %>
+             van_path(@van),
+             method: :delete,
+             data: { confirm: "Are you sure?" },
+             class: "btn btn-secondary"  %>
+</div>
+<br>
 
-<%= link_to "Book this van", new_van_booking_path(@van) %>
+<%# cl_image_tag @van.photo.key, height: 300, width: 400, crop: :fill %>
+<br>
+<br>
