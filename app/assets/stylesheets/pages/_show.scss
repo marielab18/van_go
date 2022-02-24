@@ -1,3 +1,55 @@
+.square-show {
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+.square-show .show-image {
+  height: 400px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.square-show h2 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.square-show p {
+  font-size: 12px;
+  opacity: .7;
+  margin: 0;
+}
+
+
+.square-show .square-show-infos {
+  padding: 16px;
+  display: flex;
+  // justify-content: space-between;
+  // align-items: flex-end;
+  // position: relative;
+}
+
+.square-show-infos .square-show-user {
+  position: absolute;
+  right: 16px;
+  top: -20px;
+  width: 40px;
+}
+
+.btn-flat {
+  color: white;
+  padding: 8px 24px;
+  border-radius: 4px;
+  background: #1EDD88;
+  transition: background 0.3s ease;
+}
+
+.btn-flat:hover {
+  background: #1BCB7F;
+  color: white;
+}
+
 .wrapper {
   overflow: hidden;
   height: 120px;
@@ -11,3 +63,4 @@
   height: 100%;
   width: 120px;
   object-fit: cover;
+}
