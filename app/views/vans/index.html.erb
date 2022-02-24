@@ -4,6 +4,12 @@
 <div class='container'>
   <h1>Vans </h1>
 
+<div style="width: 100%; height: 600px;"
+  data-controller="mapbox"
+  data-mapbox-markers-value="<%= @markers.to_json %>"
+  data-mapbox-api-key-value="<%= ENV['MAPBOX_API_KEY'] %>"></div>
+
+
   <%= link_to "Create a new Van", new_van_path, style: "text-decoration: none", class: "btn btn-info" %>
 
   <div class='cards'>
