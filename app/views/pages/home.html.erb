@@ -5,19 +5,20 @@
       <div class="container">
         <div class="row">
                 <div class="col-sm-5">
-                <div class="card">
+                <%# <div class="card"> %>
                   <div class="card-body">
-                    <h1 class="h3">Welcome to VanGO! <strong>Find vans in your area!</strong></h1>
+                    <h1 class="card-h3">Welcome to VanGO! <strong>Find vans in your area!</strong></h1>
                       <%= form_tag vans_path, method: :get do %>
                         <%= text_field_tag :query,
                           params[:query],
                           class: "form-control",
-                          placeholder: "Find a van"
+                          placeholder: "Your Location"
                         %>
+                        <br>
                         <%= submit_tag "Find a van", class: "btn btn-success" %>
                       <% end %>
                   </div>
-               </div>
+               <%# </div> %>
               </div>
       </div>
   <%# <h1>Welcome to VanGO! <strong>Find vans in your area!</strong></h1>
@@ -138,12 +139,12 @@
           </div>
       </div>
       <div class="row mt-2 mb-5">
-         <button class="btn text-info btn-link">
-            <span class="h6">See all vans in your area(1,000+) &gt;</span>
-        </button>
+        <%# <button class="h6"> %>
+        <%=link_to "See all vans...", vans_path, class: "d-flex justify-content-center"%>
       </div>
   </div>
 </div>
+
 <%# <div class="container-fluid container bg-success display-1">
     3rd section
 </div>
