@@ -4,7 +4,7 @@
   </div>
   <div class="product-info">
     <div class="product-text">
-      <h1><%= van.model %></h1>
+      <h1><%= link_to van.model, van_path(van) %></h1>
       <h2><%= van.brand %> (<%= van.year %>)</h2>
       <p><%= van.description %></p>
       <p id='bold-price'><%= van.price %>€</p>
