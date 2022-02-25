@@ -1,6 +1,8 @@
 <div class= "container">
-  <h2>Bookings</h2>
-
+  <br>
+  <div class = "booking-title">
+    <h2><strong>My Bookings</strong></h2>
+  </div>
   <ul>
     <% @bookings.each do |booking| %>
       <li><%= "This is your booking date #{booking.start_date} for this van #{booking.van.model}" %>
