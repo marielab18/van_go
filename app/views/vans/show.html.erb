@@ -14,8 +14,9 @@
   <br>
   <div class="square-show-infos">
     <div>
-      <h3>Manufacturing Date: <%= (@van.year)%></h3>
-      <h3>Size: <%= @van.size %></h3>
+      <h4>Size: <%= @van.size %></h4>
+      <h4>Year: <%= (@van.year)%></h4>
+      <h4>Location: <%= (@van.address)%></h4>
       <br>
       <%= link_to " Book this van for #{@van.price} € ", new_van_booking_path(@van), class: "btn btn-success" %>
       <br>
