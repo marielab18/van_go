@@ -1,16 +1,15 @@
 <br>
 <br>
 <br>
-<div class= "container">
+<div class= "container" >
 
 
 
 <h1><%= (@van.brand) + (" ") + (@van.model) %></h1>
 <br>
 
-<div class="square-show" class="mb-3">
-<img src="https://picsum.photos/200/300" alt="placeholder">
-  <%# <%= cl_image_tag @van.photo.key, class:"show-image" %>
+<div class= "d-flex justify-content-center gap-2">
+    <%= cl_image_tag @van.photo.key, height: 360, width: 327, crop: :fill %>
   <br>
   <br>
   <div class="square-show-infos">
@@ -23,8 +22,6 @@
       <br>
       <p><%= @van.description %></p>
     </div>
-    <img src="https://picsum.photos/200" class="square-show-user avatar-bordered" />
-    <p>Owner: Etienne Young</p>
   </div>
 </div>
 <br>
