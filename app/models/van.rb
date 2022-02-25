@@ -11,4 +11,5 @@ class Van < ApplicationRecord
       tsearch: { prefix: true,
                  any_word: true }
     }
+    validates :photo, presence: true
 end
