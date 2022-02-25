@@ -1,3 +1,13 @@
+.vans-title h1 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 28px;
+  color: green;
+}
+
+.container {
+  margin: 0 auto;
+}
+
 .van-wrapper {
   height: 360px;
   width: 654px;
@@ -6,6 +16,11 @@
   -webkit-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
   -moz-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
   box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+}
+
+.create-button {
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .product-img {
@@ -36,7 +51,6 @@
   color: #474747;
 }
 
-.product-text h1,
 .product-price-btn p {
   font-family: 'Helvetica', sans-serif;
 }
