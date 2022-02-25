@@ -2,6 +2,7 @@
   <h2>Add your van</h2>
     <%= simple_form_for(@van) do |f| %>
     <div class="form-group">
+
       <%= f.label :size %>
       <%= f.text_field :size, class: 'form-control' %>
     </div>
@@ -33,6 +34,7 @@
         <%= f.submit class: 'btn btn-primary' %>
         <% end %>
 </div>
+
 <br>
 <br>
 <br>

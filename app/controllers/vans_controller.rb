@@ -1,8 +1,11 @@
 class VansController < ApplicationController
 
   def index
-    @vans = Van.all
-
+    if params[:query].present?
+      @vans = Van.search_by_address(params[:query])
+    else
+      @vans = Van.all
+    end
     @markers = @vans.geocoded.map do |van|
       {
         lat: van.latitude,

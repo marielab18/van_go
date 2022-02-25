@@ -8,29 +8,22 @@
                 <div class="card">
                   <div class="card-body">
                     <h1 class="h3">Welcome to VanGO! <strong>Find vans in your area!</strong></h1>
-                     <form>
-                        <div class="form-group">
-                          <div class="form-group">
-                            <label for="exampleFormControlSelect1">Example select</label>
-                            <select class="form-control" id="exampleFormControlSelect1">
-                              <option>1</option>
-                              <option>2</option>
-                              <option>3</option>
-                              <option>4</option>
-                              <option>5</option>
-                            </select>
-                          </div>
-                        </div>
-                      </form>
-                    <button type="button" class="btn btn-success btn-lg">Large button</button>
+                      <%= form_tag vans_path, method: :get do %>
+                        <%= text_field_tag :query,
+                          params[:query],
+                          class: "form-control",
+                          placeholder: "Find a van"
+                        %>
+                        <%= submit_tag "Find a van", class: "btn btn-success" %>
+                      <% end %>
                   </div>
-                </div>
-                </div>
-            </div>
-        <%# <h1>Welcome to VanGO! <strong>Find vans in your area!</strong></h1>
-        <p>Anything.</p>
-        <a class="btn btn-flat" href="#">Book now</a> %>
+               </div>
+              </div>
       </div>
+  <%# <h1>Welcome to VanGO! <strong>Find vans in your area!</strong></h1>
+  <p>Anything.</p>
+  <a class="btn btn-flat" href="#">Book now</a> %>
+</div>
   </div>
 </div>
 
